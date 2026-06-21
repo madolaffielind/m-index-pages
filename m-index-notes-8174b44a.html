@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 发现你的游戏选择</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fcfcfc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Noto Sans SC", sans-serif;
+      color: #1a1a2e;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    /* 开场短句 — 极简 hero */
+    .hero-sentence {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 1.25rem;
+      color: #0b0b1a;
+    }
+    .hero-meta {
+      font-size: 0.85rem;
+      color: #7b7b8f;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 0.75rem;
+    }
+
+    /* 承接段落 */
+    .lead {
+      font-size: 1.05rem;
+      margin-bottom: 2.2rem;
+      color: #2b2b3e;
+    }
+    .lead a {
+      color: #0057b3;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: color 0.2s ease;
+    }
+    .lead a:hover {
+      color: #003d7a;
+    }
+
+    /* 特点列表 — 卡片化，但保持留白 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 2rem;
+      margin: 2.5rem 0 2.8rem;
+    }
+    .feature-item {
+      background: transparent;
+      padding: 0.2rem 0;
+    }
+    .feature-item .num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #8b8b9e;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .feature-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+      color: #1a1a2e;
+    }
+    .feature-item p {
+      font-size: 0.92rem;
+      color: #4a4a5e;
+      line-height: 1.6;
+    }
+
+    /* 温和结尾 — 场景及小提示 */
+    .closing-section {
+      border-top: 1px solid #eaeaea;
+      padding-top: 2rem;
+      margin-top: 2.2rem;
+    }
+    .closing-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .closing-text {
+      color: #3b3b4e;
+      font-size: 0.96rem;
+    }
+    .closing-text + .closing-text {
+      margin-top: 0.8rem;
+    }
+
+    /* FAQ 摘要 — 极简问答 */
+    .faq-mini {
+      margin: 2.2rem 0 1rem;
+      background: #f5f5f8;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+    }
+    .faq-mini .q {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 0.2rem;
+      color: #1a1a2e;
+    }
+    .faq-mini .a {
+      font-size: 0.88rem;
+      color: #4a4a5e;
+    }
+    .faq-mini .a + .q {
+      margin-top: 1rem;
+    }
+
+    /* 页脚 */
+    .footer-note {
+      margin-top: 3rem;
+      font-size: 0.78rem;
+      color: #9a9aae;
+      text-align: center;
+      border-top: 1px solid #eaeaea;
+      padding-top: 1.8rem;
+    }
+
+    /* 响应式细节 */
+    @media (max-width: 550px) {
+      .container {
+        padding: 2.2rem 1.2rem 2rem;
+      }
+      .hero-sentence {
+        font-size: 1.8rem;
+      }
+      .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+      .faq-mini {
+        padding: 1rem 1.2rem;
+      }
+    }
+    @media (max-width: 400px) {
+      .hero-sentence {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 开场短句 -->
+    <div class="hero-sentence">快速判断一个平台是否值得停留。</div>
+    <div class="hero-meta">对于很多人来说，这是选择前的第一道检视。</div>
+
+    <!-- 承接段落：从用户想快速识别网站用途的角度展开 -->
+    <div class="lead">
+      当你点开一个不熟悉的网站，通常只需要几秒就能形成初步判断：它提供什么服务？信息是否清晰？值不值得深入了解？<a href="https://m-index-ayxsports.com">爱游戏</a> 这个页面，正是为了帮你缩短这个判断过程——它把核心内容与功能入口整合在一个简洁的索引页上，让你不用在多个页面之间反复跳转。
+    </div>
+
+    <!-- 特点列表 -->
+    <div class="feature-grid">
+      <div class="feature-item">
+        <span class="num">01</span>
+        <h3>主题集中</h3>
+        <p>围绕游戏相关资讯与资源进行组织，避免信息分散，减少浏览噪音。</p>
+      </div>
+      <div class="feature-item">
+        <span class="num">02</span>
+        <h3>直接索引</h3>
+        <p>页面结构以目录式导航为主，常用条目一目了然，无需层层菜单。</p>
+      </div>
+      <div class="feature-item">
+        <span class="num">03</span>
+        <h3>轻量加载</h3>
+        <p>内容层级扁平，没有冗余脚本，适合快速打开和低带宽环境。</p>
+      </div>
+      <div class="feature-item">
+        <span class="num">04</span>
+        <h3>通用适配</h3>
+        <p>移动端与桌面端共用一套布局，缩放阅读体验稳定，不依赖特定硬件。</p>
+      </div>
+    </div>
+
+    <!-- 温和结尾：场景提示 + 简短 FAQ 摘要 -->
+    <div class="closing-section">
+      <div class="closing-title">常见使用场景</div>
+      <div class="closing-text">
+        · 想快速了解网站涵盖哪些游戏相关内容的人。<br>
+        · 需要在一个页面内找到多个分类入口，而不愿逐个翻阅菜单。<br>
+        · 对响应速度有要求，希望页面载入后即可开始浏览。
+      </div>
+    </div>
+
+    <div class="faq-mini">
+      <div class="q">这个索引页会经常更新吗？</div>
+      <div class="a">页面内容根据站内资源变化而调整，保持索引的有效性。</div>
+      <div class="q">必须登录才能使用？</div>
+      <div class="a">无需登录即可查看索引内容，部分深层功能可能需要注册账号。</div>
+    </div>
+
+    <div class="footer-note">
+      爱游戏 · 索引页 · 信息概览
+    </div>
+  </div>
+</body>
+</html>
